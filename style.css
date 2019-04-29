@@ -1,0 +1,898 @@
+/* //////////////////////////// GENERAL /////////////////////////////// */
+@font-face
+{
+	font-family: "Charm";
+	src:	url(polices/Charm-Bold.ttf) format("truetype"),
+		 		url(polices/Charm-Regular.ttf) format("truetype");
+}
+
+@font-face
+{
+	font-family: 'Acme';
+	src: url(polices/Acme-Regular.ttf) format("truetype");
+}
+
+*
+{
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+  text-decoration: none !important;
+  color: inherit !important;
+  list-style: none;
+	text-align: center;
+}
+nav
+{
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, .contact-btn, .realisations-contact-btn, .errors, .mail-valid-text
+{
+	font-family: 'Charm';
+}
+h1, h2, h3
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1
+{
+	line-height: 80px;
+}
+
+.linkExt
+{
+	color: blue !important;
+	font-weight: bold;
+}
+
+.title
+{
+	background: -webkit-gradient(linear, left top, left bottom, from(black), to(red));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.adn
+{
+	color: red !important;
+	font-family: 'Charm';
+	font-weight: bold;
+}
+/* ///////////////////////////////// NAV BANNER ///////////////////////////////// */
+
+#nav-box
+{
+	background-color: rgba(255, 255, 255, 0.3);
+	font-family: 'Charm';
+  position: fixed;
+  top: 0;
+  width: 100%;
+	height: 65px;
+	z-index: 1030;
+}
+
+                  /* ////// LOGO ////// */
+
+    #logo
+    {
+      position: absolute;
+      left: 50px;
+			top: 5px;
+    }
+		#logo-welcome
+    {
+      width: 250px;
+			margin: auto;
+    }
+
+
+                  /* ///// NAV ///// */
+
+        .nav-list
+        {
+          display: inline-block;
+          vertical-align: middle;
+          padding: 0 20px;
+					padding-top: 5px;
+          font-size: 2.5em;
+          font-weight: bold;
+					line-height: 60px;
+        }
+
+        .nav-list:hover
+        {
+          background: -webkit-gradient(linear, left top, left bottom, from(red), to(darkred));
+        	-webkit-background-clip: text;
+        	-webkit-text-fill-color: transparent;
+          cursor: pointer;
+        }
+
+				.hide-menu-btn:hover, .show-menu-btn:hover
+				{
+					background-color: darkred;
+				}
+
+
+                    /* /////// CUBE //////// */
+.show-menu-btn, .hide-menu-btn
+{
+	cursor: pointer;
+	box-shadow: 0 0 10px white;
+	margin: 5px auto;
+	border-radius: 5px;
+	background-color: black;
+	width: 50px;
+	height: 45px;
+	padding: 5px;
+}
+.btn-line
+{
+	border-radius: 5px;
+	margin: 5px auto;
+	width: 35px;
+	height: 5px;
+	background-color: white;
+}
+
+#show-menu, #hide-menu
+{
+	display: none;
+	margin: auto;
+	padding: 5px 0;
+}
+
+
+/* ///////////////////////////// RESPONSIVE NAV BANNER //////////////////////////////// */
+
+@media all and (max-width: 1100px)
+{
+  #logo
+  {
+    padding: 5px 0;
+    position: static;
+    margin: auto;
+  }
+
+  #nav-list-box
+  {
+		padding-top: 0;
+		background-color: white;
+  }
+      .nav-list
+      {
+        color: #cdc9c9 !important;
+        display: block;
+        padding: 2px 10px;
+        background-color: black;
+      }
+}
+.hide-menu-btn
+{
+	background-color: darkred;
+}
+.hide-menu-btn:hover
+{
+	background-color: black;
+}
+
+/* //////////////////////////// BANNER //////////////////////////////////// */
+.banner-box
+{
+	overflow: hidden;
+}
+
+	.banner
+	{
+		width: 100%;
+		height: 500px;
+		-webkit-transition: all 6s;
+		-moz-transition: all 6s;
+		-o-transition: all 6s;
+		transition: all 6s;
+	}
+
+	.banner:hover
+	{
+		-ms-transform: scale(1.8);
+		-moz-transform: scale(1.8);
+		-webkit-transform: scale(1.8);
+		-o-transform: scale(1.8);
+		transform: scale(1.8);
+	}
+
+/* ///////////////////////////////////// FOOTER ///////////////////////////////////// */
+
+footer
+{
+	background-color: black;
+	padding: 20px;
+	min-height: 200px;
+}
+	.footer-contact
+	{
+		padding: 20px;
+	}
+
+	.footer-box
+	{
+		padding-top: 30px;
+	}
+	.footer-box p
+	{
+		font-size: 1.5em;
+		color: white !important;
+	}
+	.tel
+	{
+		font-size: 3.5em !important;
+	}
+/* ///////////////////////////////////// INDEX.PHP ///////////////////////////////////// */
+
+									/* /////////////////////////////////////// HOME SECTION ////////////////////////////// */
+.banner-home
+{
+	background-image: url('images/banner-bg.jpg');
+}
+#home
+{
+	min-height: 650px;
+	padding-bottom: 50px;
+	padding-top: 15px;
+	background-image: url('images/home-bg.jpg');
+	background-attachment: fixed;
+}
+	#home li::before
+	{
+		font-size: 1em;
+	}
+	#title-box p
+	{
+
+		width: 75%;
+		margin: auto;
+	}
+		#accueil-title
+		{
+			margin: 0;
+			padding: 15px;
+			font-weight: bold;
+			font-size: 4em;
+			font-style: italic;
+		}
+		.welcome
+		{
+			font-family: 'Acme';
+			margin-bottom: 0;
+			padding: 15px;
+			font-size: 2em;
+		}
+		.skills-box
+		{
+
+			padding-bottom: 20px;
+			margin: 0 25px;
+		}
+				.skills-title
+				{
+					font-size: 4em;
+					padding-bottom: 30px;
+					border-bottom: solid 3px darkred;
+				}
+				.skill
+				{
+					font-family: 'charm';
+					font-size: 2.5em;
+					color: black;
+				}
+		.btn-box, .realisations-btn-box
+		{
+			padding-top: 5px;
+		}
+		.contact-btn, .realisations-contact-btn
+		{
+			margin-top: 50px;
+			border-radius: 5px 5px 5px 5px;
+			background: -webkit-gradient(linear, left top, left bottom, from(black), to(red));
+			color: white !important;
+			padding: 5px 10px;
+			box-shadow: 6px 6px 6px black;
+			text-decoration: none;
+		}
+		.contact-btn
+		{
+			font-size: 2.3em;
+		}
+		.realisations-contact-btn
+		{
+			font-size: 1em;
+		}
+
+		.realisations-btn-box
+		{
+			padding-top: 140px;
+			display: none;
+		}
+		.contact-btn:hover, .realisations-contact-btn:hover
+		{
+			position: relative;
+			background: -webkit-gradient(linear, left bottom, left top, from(#504d4d), to(white));
+			color: darkred !important;
+			text-decoration: none;
+			-webkit-transition: all 200ms ease-in;
+			-ms-transition: all 200ms ease-in;
+			-moz-transition: all 200ms ease-in;
+			transition: all 200ms ease-in;
+		}
+
+
+#creations
+{
+	background-image: url('images/bg.jpg');
+	background-attachment: fixed;
+	min-height: 600px;
+}
+
+#refontes
+{
+	margin: 0;
+	padding: 25px 0px;
+	background-image: url('images/home-bg.jpg');
+	background-attachment: fixed;
+}
+		#creation-welcome, #refonte-welcome
+		{
+			padding: 50px;
+			background-color: rgba(0, 0, 0, 0.5);
+			min-height: 300px;
+		}
+		#refonte-welcome
+		{
+			margin-top: 15px;
+		}
+		.creation-welcome-title, .refonte-welcome-title
+		{
+			color: white !important;
+			font-size: 3.5em;
+			padding-bottom: 10px;
+		}
+		.creation-welcome-p, .refonte-welcome-p
+		{
+			line-height: 45px;
+			color: #b7b7b7 !important;
+			width: 80%;
+			margin: auto;
+			padding-bottom: 35px;
+			font-size: 2em;
+		}
+
+.creation-box
+{
+	width: 49%;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 20px;
+}
+
+.creationImg-box
+{
+	margin: auto;
+	width: 400px;
+	height: 300px;
+}
+.creationImg
+{
+	width: 100%;
+	height: 100%;
+}
+
+.creationImg-blog
+{
+	background-image: url('images/blog.png');
+}
+.creationImg-dynamique
+{
+	background-image: url('images/dynamique.png');
+}
+.creationImg-application
+{
+	background-image: url('images/application.png');
+}
+.creationImg-vitrine
+{
+	background-image: url('images/vitrine.png');
+}
+.creation-red-block
+{
+	background-image: url('images/simple-creation-bg.png');
+}
+		.creation-block-title-box
+		{
+			padding-bottom: 25px;
+		}
+				.creation-red-block-title
+				{
+					border-radius: 10px 10px 10px 10px;
+					background-color: rgba(0, 0, 0, 0.5);
+					font-size: 4em;
+					color: white !important;
+					border-bottom: solid 3px black;
+					width: 90%;
+					margin: auto;
+					padding: 20px;
+				}
+				.creation-red-block-p
+				{
+					border-radius: 10px 10px 10px 10px;
+					background-color: rgba(0, 0, 0, 0.5);
+					padding: 20px;
+					color: white !important;
+					width: 80%;
+					margin: auto;
+					font-size: 2em;
+				}
+						.creation-red-block-span-bold
+						{
+							font-weight: bold;
+							color: white !important;
+						}
+
+.creation-black-block
+{
+	background-image: url('images/complex-creation-bg.jpg');
+	padding: 0 15px;
+	color: white !important;
+}
+		.creation-black-block-title
+		{
+			border-radius: 10px 10px 10px 10px;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: red !important;
+			padding-bottom: 15px;
+			font-size: 3.5em;
+			border-bottom: solid 3px red;
+			width: 90%;
+			margin: auto;
+			padding: 20px;
+		}
+		.creation-black-block-p
+		{
+			border-radius: 10px 10px 10px 10px;
+			background-color: rgba(0, 0, 0, 0.5);
+			padding: 20px;
+			color: white !important;
+			width: 80%;
+			margin: auto;
+			font-size: 2em;
+		}
+				.creation-black-block-span-bold
+				{
+					font-weight: bold;
+					color: white !important;
+				}
+
+.creation-red-block, .creation-black-block
+{
+	margin-bottom: 20px;
+}
+
+.refonte-title
+{
+	line-height: 80px;
+	font-size: 3em;
+}
+.refonte-img-box
+{
+	margin: 25px auto;
+	margin-bottom: 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.refonte-img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.refonte-p
+{
+	width: 70%;
+	margin: auto;
+	font-size: 1.5em;
+}
+
+.refonte-img-design
+{
+	background-image: url('images/design.jpg');
+}
+.refonte-img-fonctionnalites
+{
+	background-image: url('images/fonctionnalites.jpg');
+}
+.refonte-img-securite
+{
+	background-image: url('images/securite.png');
+}
+.refonte-img-az
+{
+	background-image: url('images/refontes.png');
+}
+
+@media all and (max-width:1000px)
+{
+	.creation-box
+	{
+		width: 100%;
+		padding: 20px;
+	}
+}
+
+@media all and (max-width:500px)
+{
+	.creationImg-box
+	{
+		display: none;
+	}
+}
+/*  ////////////////////////////////////// REALISATION.PHP ////////////////////////// */
+.banner-realisations
+{
+	background-image: url('images/banner-realisations.jpg');
+}
+#realisations
+{
+	background-image: url('images/realisations-bg.jpg');
+	background-attachment: fixed;
+	padding: 15px 0px;
+}
+
+	.realisations-row
+	{
+		padding-bottom: 50px;
+	}
+		.realisation
+		{
+			width: 49%;
+			display: inline-block;
+			padding: 20px;
+		}
+
+
+		.realisation-box
+		{
+			margin: auto;
+			overflow: hidden;
+			border-radius: 50%;
+			width: 300px;
+			height: 300px;
+		}
+
+			.realisations-img
+			{
+				border-radius: 50%;
+				width: 300px;
+				height: 300px;
+				-webkit-transition: all 5s;
+		    -moz-transition: all 5s;
+		    -o-transition: all 5s;
+		    transition: all 5s;
+				background-size: cover;
+			}
+				.realisations-img-macon
+				{
+					background-image: url('images/agence-web.jpg');
+				}
+
+				.realisations-img-ecrivain
+				{
+					background-image: url('images/livre.jpg');
+				}
+
+				.realisations-img-therapeute
+				{
+					background-image: url('images/SEBbg.jpg');
+				}
+
+				.realisations-img-velib
+				{
+					background-image: url('images/VELIBbg.jpg');
+				}
+
+		.realisations-img:hover
+		{
+			-ms-transform: scale(1.8);
+	    -moz-transform: scale(1.8);
+	    -webkit-transform: scale(1.8);
+	    -o-transform: scale(1.8);
+	    transform: scale(1.8);
+		}
+
+		.realisations-img:hover .realisations-btn-box
+		{
+			display: block;
+		}
+
+		.realisations-img img
+		{
+			max-width: 100%;
+		}
+
+		.realisations-title
+		{
+			font-size: 3em;
+			line-height: 70px;
+		}
+		.realisations-p
+		{
+			width: 70%;
+			margin: auto;
+			font-size: 1.5em;
+			padding-bottom: 20px;
+		}
+
+#realisations-welcome
+{
+	padding-bottom: 25px;
+	color: black !important;
+}
+.realisations-welcome-title
+{
+	font-size: 5em;
+	line-height: 120px;
+}
+
+.realisations-welcome-p
+{
+	font-family: 'Acme';
+	color: black !important;
+	line-height: 45px;
+	width: 75%;
+	margin: auto;
+	padding-bottom: 35px;
+	font-size: 2em;
+}
+
+/* ////////////////////////////// RESPONSIVE realisations.php ///////////////////////////// */
+
+@media all and (max-width: 1000px)
+{
+	.realisation
+	{
+		width: 90%;
+		display: block;
+		margin: 20px auto;
+	}
+	.realisations-row
+	{
+		padding-bottom: 0;
+	}
+}
+
+/* ////////////////////////// COMPETENCES PAGES ////////////////////////// */
+.banner-competences
+{
+	background-image: url('images/banner-competences.jpeg');
+}
+#competences
+{
+	background-image: url('images/competences.jpg');
+	background-attachment: fixed;
+	padding: 50px 0px;
+}
+
+
+.competences-welcome-title
+{
+	color: white !important;
+	font-size: 4em;
+	padding: 10px;
+}
+
+.competences-welcome-title, .contact-welcome-title
+{
+	font-size: 5em;
+	line-height: 120px;
+}
+
+.competences-welcome-p, .contact-welcome-p
+{
+	font-family: 'Acme';
+	color: black !important;
+	line-height: 45px;
+	width: 75%;
+	margin: auto;
+	padding-bottom: 35px;
+	font-size: 2em;
+}
+
+.competences-title
+{
+	padding-bottom: 10px;
+	font-size: 3em;
+}
+.competences-p
+{
+	padding: 20px;
+	border-radius: 20px 20px 20px 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin: auto;
+	width: 75%;
+	font-size: 2em;
+}
+
+.row
+{
+	padding-bottom: 50px;
+}
+.competence-img
+{
+	margin: 20px auto;
+
+	width: 300px;
+	height: 200px;
+}
+.competence-img-responsive
+{
+	background-image: url('images/responsive.png');
+}
+.competence-img-administration
+{
+	background-image: url('images/administrateur.png');
+}
+.competence-img-seo
+{
+	background-image: url('images/referencement.png');
+}
+.competence-img-interactivite
+{
+	background-image: url('images/interactivite.png');
+}
+.competence-img-membre
+{
+	background-image: url('images/espace-membre.png');
+}
+.competence-img-administration
+{
+	background-image: url('images/administrateur.png');
+}
+.competence-img-securite
+{
+	background-image: url('images/securite-2.png');
+}
+.competence-img-animations
+{
+	background-image: url('images/animations.png');
+}
+.competence-img-bases
+{
+	background-image: url('images/bases-de-donnees.png');
+}
+/* ///////////////////////////// RESPONSIVE COMPETENCES.PHP ////////////////////////////////// */
+/* Midle screens*/
+@media all and (max-width: 1300px)
+{
+
+}
+/* Small screens*/
+@media all and (max-width: 800px)
+{
+
+}
+
+/* ///////////////////////////// CONTACT.PHP ////////////////////////////////// */
+
+.banner-contact
+{
+	background-image: url('images/banner-contact.jpg');
+}
+
+#contact
+{
+	background-image: url('images/bgContact.jpg');
+	background-attachment: fixed;
+	padding: 50px;
+}
+
+.contact-welcome-title
+{
+	font-size: 5em;
+	margin: 0;
+}
+
+.contact-welcome-p
+{
+	font-family: 'Acme';
+	width: 75%;
+	margin: auto;
+}
+
+.form-box
+{
+	width: 55%;
+	margin: auto;
+}
+form
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+	font-size: 1.5em;
+}
+.form-title
+{
+	font-size: 2em;
+}
+
+.field-form
+{
+	width: 49%;
+	display: inline-block;
+	color: black !important;
+}
+label
+{
+	font-family: 'Acme';
+}
+textarea
+{
+	margin: auto;
+	color: black !important;
+}
+
+.contact-btn-form
+{
+	margin: 0;
+	font-size: 1.5em;
+}
+
+.g-recaptcha div
+{
+	margin: auto;
+}
+
+.form-error
+{
+	font-size: 2.5em;
+	font-weight: bold;
+	color: darkred !important;
+}
+.errors
+{
+	padding: 5px;
+	margin: 5px 0;
+	color: darkred !important;
+	font-size: 0.9em;
+}
+
+.mail-valid-text
+{
+	font-size: 2.5em;
+	color: green !important;
+	font-weight: 800;
+	width: 60%;
+	margin: auto;
+}
+
+/* ///////////////// RESPONSIVE contact.php ////////////////////// */
+@media all and (max-width: 1200px)
+{
+	.form-box
+	{
+		width: 100%;
+	}
+	form
+	{
+		padding: 0;
+	}
+		.field-form
+		{
+			display: block;
+			width: 90%;
+			margin: auto;
+		}
+
+}
